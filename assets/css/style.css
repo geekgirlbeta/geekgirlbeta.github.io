@@ -3,8 +3,10 @@ html, body {
 }
 
 body {
-    color: #777777;
-    background-image: url("../images/spiration-light.png");
+	color: #777777;
+	display: flex;
+	flex-direction: column;
+	background-image: url("../images/spiration-light.png");
     border-color: #dddddd;
     background-color: #ffffff;
     font-size: 18px;
@@ -20,7 +22,8 @@ body {
 	width: 100%;
 	max-width: 960px;
 	margin: 0 auto;
-	clear: both;	
+	clear: both;
+	flex: 1 0 auto;	
 }
 
 h2, h3, p {
@@ -116,16 +119,17 @@ footer {
 	color: #cccccc;
 	font-size: 14px;
     text-align: center;
-    bottom: 0;
-    margin: 0;
+	margin: 0;
+}
+
+.footer {
+	flex-shrink: 0;
 }
 
 .footer-container {
-    width: 100%;
-	max-width: 960px;
-    margin: 0 auto;
-    height: 65px;
-	clear: both;
+	width: 100%;
+	margin: 0 auto;
+	bottom: 0;
 	padding-top: 15px;
 }
 
